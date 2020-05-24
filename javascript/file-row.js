@@ -155,10 +155,13 @@ function FileRow(torrent, depth, name, indices, even, fullPath)
 		e.className = "inspector_torrent_file_list_entry_name";
 		setTextContent(e, name);
 		
-		if(torrent.isFinished())
-			$(e).click( function(){ window.open("/files/"+torrent.getDownloadDir().match(/\/home\/transmission\/(.*)/)[1]+"/"+fullPath); } );
-			// $(e).click( function(){ window.open("/files/Downloads/"+encodeURIComponent(torrent.getName())+((name==torrent.getName())?"":("/"+encodeURIComponent(name))));} );
-
+		if(isDone()) {
+			var file_loc = "/files/"+torrent.getDownloadDir().match(/\/home\/transmission\/(.*)/)[1]+"/"+fullPath;
+			if(!torrent.isFinished())
+				file_loc = file_loc.replace('/Downloads/', '/Downloading/');
+			$(e).click( function(){ window.open(file_loc); } );
+		}
+		
 		root.appendChild(e);
 
 		e = document.createElement('div');
