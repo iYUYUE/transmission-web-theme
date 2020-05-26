@@ -423,7 +423,6 @@ div.dialog_container div.dialog_window {
 
 div.dialog_container .dialog_logo, #about-dialog>#about-logo {
   margin: 0;
-  margin-left: 30px;
   display: inline-block;
   text-align: center;
 }

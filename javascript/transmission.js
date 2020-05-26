@@ -692,7 +692,7 @@ Transmission.prototype =
 				o = 'Transmission ' + this.serverVersion;
 				$('#about-dialog #about-title').html(o);
 				$('#about-dialog').dialog({
-					title: 'About',
+					title: '',
 					show: 'fade',
 					hide: 'fade'
 				});
@@ -703,7 +703,7 @@ Transmission.prototype =
 				break;
 
 			case 'tipjar':
-				window.open('https://transmissionbt.com/donate/');
+				window.open('https://github.com/iYUYUE/transmission-web-theme');
 				break;
 
 			case 'unlimited_download_rate':
