@@ -26,6 +26,7 @@ body {
   body div.dialog_container {
     min-height: 326px; }
   body div#torrent_inspector {
+    padding-top: 103px;
     min-height: 329px; }
   body.landscape div#torrent_container {
     min-height: 147px; }
