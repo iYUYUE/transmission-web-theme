@@ -118,6 +118,8 @@ div#toolbar {
   #statusbar #filter {
     float: left;
     margin-left: 5px; }
+    #statusbar #filter select#filter-tracker {
+      display: none; }
     #statusbar #filter input#torrent_search {
       display: none; }
     #statusbar #filter #filter-count {
