@@ -21,6 +21,7 @@ body {
   body a {
     outline: 0; }
   body div#torrent_container {
+    padding-top: 103px;
     min-height: 328px; }
   body div.dialog_container {
     min-height: 326px; }
