@@ -896,17 +896,17 @@ div#dialog_message.dialog_message {
   overflow: hidden;
   padding-bottom: 0; }
 
-div#dialog_message.dialog_message #auto_start_label{
+div#upload_container div.dialog_window div.dialog_message #auto_start_label {
   float: none !important;
 }
 
 div#upload_container div.dialog_window div.dialog_message label {
-  display: inline-block;
+  display: inline-block !important;
   margin-bottom: 8px;
 }
 
 div#upload_container div.dialog_window div.dialog_message input {
-  display: inline-block;
+  display: inline-block !important;
   margin-bottom: 8px;
 }
 
