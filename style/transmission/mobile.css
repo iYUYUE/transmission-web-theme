@@ -24,6 +24,8 @@ body {
     padding-top: 103px;
     min-height: 328px; }
   body div.dialog_container {
+    transform: none !important;
+    padding-top: 103px;
     min-height: 326px; }
   body div#torrent_inspector {
     padding-top: 103px;
@@ -894,8 +896,27 @@ div#dialog_message.dialog_message {
   overflow: hidden;
   padding-bottom: 0; }
 
+div#dialog_message.dialog_message #auto_start_label{
+  float: none !important;
+}
+
+div#upload_container div.dialog_window div.dialog_message label {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+div#upload_container div.dialog_window div.dialog_message input {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+div#upload_container div.dialog_window div.dialog_message input#torrent_upload_file {
+  background: #333;
+}
+
 #torrent_upload_file, label[for="torrent_upload_file"] {
-  display: none; }
+  display: none; 
+}
 
 h2.dialog_heading {
   text-align: center;
