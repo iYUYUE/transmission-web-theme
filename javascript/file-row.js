@@ -156,7 +156,7 @@ function FileRow(torrent, depth, name, indices, even, fullPath)
 		setTextContent(e, name);
 		
 		if(isDone()) {
-			var file_loc = "/files/"+torrent.getDownloadDir().match(/\/home\/transmission\/(.*)/)[1]+"/"+fullPath;
+			var file_loc = "/files/"+torrent.getDownloadDir().match(/\/downloads\/(.*)/)[1]+"/"+fullPath;
 			if(!torrent.isFinished())
 				file_loc = file_loc.replace('/Downloads/', '/Downloading/');
 			$(e).click( function(){ window.open(file_loc); } );
